@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">a3_1155152375</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello World\nLyu Chenghao 1155152375    </string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="default_chatroom">Default Chatroom</string>
+    <string name="todo">TODO</string>
+    <string name="type_your_message">Type your message</string>
+    <string name="send">Send</string>
+    <string name="refresh">Refresh</string>
+    <string name="headimg">headimg</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="connect">WebSocket Connected</string>
+    <string name="error_connect">WebSocket Error</string>
+    <string name="disconnect">WebSocket Disconnect</string>
+</resources>
