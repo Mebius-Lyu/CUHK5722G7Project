@@ -271,7 +271,7 @@ public class ChatActivity extends AppCompatActivity implements AbsListView.OnScr
 
     private void getTotal_page(){
         new Thread(() -> {
-            String result = "";
+            String result;
             result = HttpUrl.fetchData("http://3.135.240.182/api/a3/get_messages?chatroom_id="+ChatroomId+"&page=1");
             try {
                 JSONObject json = new JSONObject(result);//{"status","data"}
@@ -314,7 +314,7 @@ public class ChatActivity extends AppCompatActivity implements AbsListView.OnScr
                 if (current_page <= total_page) {
                         current_page++;
                         Log.e("现在页码： ", String.valueOf(current_page));
-                        Toast.makeText(this,"Loading Page: " +(current_page-1)+"\r\n"+"Total Page: "+total_page+"\r\n"+"Please move slowly",Toast.LENGTH_SHORT).show();
+//                        Toast.makeText(this,"Loading Page: " +(current_page-1)+"\r\n"+"Total Page: "+total_page+"\r\n"+"Please move slowly",Toast.LENGTH_SHORT).show();
                         String URL1 = "http://3.135.240.182/api/a3/get_messages?chatroom_id=" + ChatroomId + "&page=" + current_page;
                         Log.e("URL1", URL1);
                         FetchMessageHistoryTask task = new FetchMessageHistoryTask(msgList);
